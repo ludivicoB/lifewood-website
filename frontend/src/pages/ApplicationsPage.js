@@ -20,7 +20,6 @@ import {
 } from "@mui/material";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
-import FullInfoCard from "../components/FullInfoCard";
 const projects = [
   { title: "AI Data Extraction" },
   { title: "Machine Learning Enablement" },
@@ -345,6 +344,7 @@ const ApplicationsPage = () => {
                               variant="contained"
                               color="primary"
                               onClick={() => handleOpen(app)}
+                              sx={{ textWrap: "nowrap" }}
                             >
                               View File
                             </Button>
