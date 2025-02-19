@@ -1,0 +1,27 @@
+.apply{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 225, 225);
+    /* padding-bottom: 6rem; */
+    height: 100%;
+    /* background-color: blue; */
+}
+.submit{
+    background-color: #065940;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: #0f2c23;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem
+}
+/* body.modal-open {
+    overflow: hidden;
+  }
+   */

@@ -1,0 +1,23 @@
+.card-container {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25rem;
+    height: 20rem;
+    padding: 3rem;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .card-container:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the card for effect */
+  }
+  
+  .card-container:hover svg {
+    color: #185407; /* Change icon color on hover */
+  }
+  
+  .card-container:hover .MuiTypography-root {
+    color: #185407; /* Change text color on hover */
+  }
+  

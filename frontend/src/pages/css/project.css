@@ -1,0 +1,47 @@
+.project{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    background-color: black;
+    position: relative;
+    
+}
+.ailogoproj{
+    width: 40rem;
+}
+.textproj{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.277);
+}
+.carousel{
+    padding: 3.5rem;
+    /* background-color: rgba(0, 0, 0, 0.752); */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), 
+              url('/public/projectback.jpg'); */
+    background: #1C6EA4;
+    background: -moz-radial-gradient(center, #1C6EA4 0%, #133CCB 0%, #082131 100%);
+    background: -webkit-radial-gradient(center, #1C6EA4 0%, #133CCB 0%, #082131 100%);
+    background: radial-gradient(ellipse at center, #1C6EA4 0%, #133CCB 0%, #082131 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.be-amazed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.be-amazed img{
+    width: 35rem;
+}

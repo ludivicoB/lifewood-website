@@ -1,0 +1,131 @@
+/* Global Styles - Prevent White Space Issue */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+/* Ensure No Overflow on the Page */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Home Section */
+.home {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  background: url("https://www.shutterstock.com/image-vector/abstract-gradient-wave-particles-big-600nw-1930623710.jpg") no-repeat center center/cover;
+  text-align: center;
+  /* padding: 2rem; */
+  /* overflow-x: hidden; */
+}
+
+/* Logo Responsiveness */
+.ailogo {
+  width: clamp(20rem, 15vw, 20rem);
+  height: auto;
+  /* max-width: 100%; */
+}
+
+/* Services Section */
+.services {
+  background-image: url('/public/homeback.jpg');
+  text-align: center;
+  padding: 6rem 2rem;
+  background-color: rgb(202, 211, 206);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+/* Service Cards */
+.servcards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 5%;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Modalities Section */
+.modalities {
+  background-image: url('/public/modalback.jpg');
+  text-align: center;
+  padding: 6rem 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.modal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts based on screen size */
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; /* Centers the grid */
+  padding: 20px;
+  overflow-y: hidden;
+}
+
+.card-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll issues */
+}
+
+
+/* Prevent Overflowing Content */
+.text h3,
+.servtext h1 {
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.servtext h4 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* Ensure No Unwanted Horizontal Scroll */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .modal-cards {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-cards {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .servtext {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .servcards {
+      padding: 2rem;
+  }
+}

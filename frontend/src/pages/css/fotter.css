@@ -1,0 +1,11 @@
+.footer{
+    background-color: #0a401f;
+    padding: 2rem;
+    border-top: 0.5rem solid gray;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
