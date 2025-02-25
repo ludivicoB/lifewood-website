@@ -213,6 +213,15 @@ export default function ApplyPage() {
         setTimeout(() => {
           window.location.reload();
         }, 1000);
+      } else if (
+        res.data.message ==
+        "The email has already been used for this project. Please use a different email."
+      ) {
+        setLoading(false);
+        setErrorMessage(
+          "The email has already been used for this project. Please use a different email."
+        );
+        setOpen(true);
       } else {
         setLoading(false);
         setErrorMessage(
