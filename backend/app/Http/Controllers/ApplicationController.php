@@ -35,6 +35,18 @@ class ApplicationController extends Controller
             'resume' => 'file' // File is optional
         ]);
 
+        // Check if the email is already used for the selected project
+        $existingApplication = Application::where('email', $request->input('email'))
+            ->where('projectname', $request->input('projectname'))
+            ->first();
+
+        if ($existingApplication) {
+            return response()->json([
+                'message' => 'The email has already been used for this project. Please use a different email.',
+                'status' => 'error'
+            ]);
+        }
+
         // Store file if provided
         $filePath = null;
         $fileName = null;
