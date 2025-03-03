@@ -72,29 +72,40 @@ export default function HomePage() {
   return (
     <>
       <div className="home" style={{ width: "100%", backgroundColor: "black" }}>
-        <div className="home-logo">
-          <img
-            className="ailogo"
-            src="/ai.png"
-            alt="AI Logo"
-            style={{ opacity: "0.8" }}
-          />
-          <img
-            className="ailogo"
-            src="/ai2.png"
-            alt="AI Logo"
-            style={{ opacity: "0.8" }}
-          />
-        </div>
-        <div className="text">
-          <Typography
-            variant="h4"
-            color="#e6e6e6"
-            sx={{ letterSpacing: "0.5rem" }}
-          >
-            HARNESSING THE POTENTIAL OF AI
-          </Typography>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+          className="home-logo"
+        >
+          <div className="home-logo">
+            <img
+              className="ailogo"
+              src="/ai.png"
+              alt="AI Logo"
+              style={{ opacity: "0.8" }}
+            />
+            <img
+              className="ailogo"
+              src="/ai2.png"
+              alt="AI Logo"
+              style={{ opacity: "0.8" }}
+            />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+        >
+          <div className="text">
+            <Typography
+              variant="h4"
+              color="#e6e6e6"
+              sx={{ letterSpacing: "0.5rem" }}
+            >
+              HARNESSING THE POTENTIAL OF AI
+            </Typography>
+          </div>
+        </motion.div>
       </div>
 
       <div className="services">
